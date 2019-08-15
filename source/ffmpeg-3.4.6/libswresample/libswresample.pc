@@ -1,0 +1,14 @@
+prefix=/Users/heshiqi/Desktop/jni/ffmpeg-3.4.6/android/armeabi
+exec_prefix=${prefix}
+libdir=/Users/heshiqi/Desktop/jni/ffmpeg-3.4.6/android/armeabi/lib
+includedir=/Users/heshiqi/Desktop/jni/ffmpeg-3.4.6/android/armeabi/include
+
+Name: libswresample
+Description: FFmpeg audio resampling library
+Version: 
+Requires: 
+Requires.private: libavutil >=
+Conflicts:
+Libs: -L${libdir}  -lswresample 
+Libs.private: -lm
+Cflags: -I${includedir}

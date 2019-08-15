@@ -1,0 +1,14 @@
+prefix=/Users/heshiqi/Desktop/jni/ffmpeg-3.4.6/android/armeabi
+exec_prefix=${prefix}
+libdir=/Users/heshiqi/Desktop/jni/ffmpeg-3.4.6/android/armeabi/lib
+includedir=/Users/heshiqi/Desktop/jni/ffmpeg-3.4.6/android/armeabi/include
+
+Name: libavcodec
+Description: FFmpeg codec library
+Version: 
+Requires: 
+Requires.private: libswresample >= , libavutil >=
+Conflicts:
+Libs: -L${libdir}  -lavcodec 
+Libs.private: -lx264 -lm -lz -pthread -pthread
+Cflags: -I${includedir}
